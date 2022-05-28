@@ -1,0 +1,79 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    /* 测试用的背景色 */
+    background: url('/assets/images/loginbg.jpg')center center no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    height: 120px;
+    width: 120px;
+}
+
+.loginAndRegBox {
+    width: 400px;
+    height: 280px;
+    background-color: rgb(255, 255, 255, 0.3);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* .loginAndRegBox>div {
+    position: relative;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.loginAndRegBox h1 {
+    position: relative;
+    display: block;
+    left: 50%;
+    height: 55px;
+    width: 168px;
+    padding-top: 20px;
+    transform: translate(-50%);
+    color: rgb(255, 255, 255);
+}
+
+#reg_box {
+    display: none;
+}
+
+.layui-form {
+    /* padding: 0 30px 0 0px; */
+    padding: 0 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links a {
+    /* font-size:12px; */
+    color: rgb(255, 255, 255);
+}
+
+.layui-form-item {
+    position: relative;
+    /* padding-left: 30px; */
+}
+
+.layui-input {
+    padding-left: 34px;
+}
+
+.layui-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
