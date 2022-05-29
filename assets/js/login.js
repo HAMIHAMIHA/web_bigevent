@@ -92,16 +92,7 @@ document.getElementById("form_login").addEventListener("submit", function(e) {
         }
         window.localStorage.setItem('token', res.data.token)
             // console.log(res.data.token) //服务端返回的token字符串
-            // window.location.href = '/index.html'
-            //     axios({
-            //         method: "GET",
-            //         url: "http://www.liulongbin.top:3007/my/userinfo",
-            //         params: `Authorization=${res.data.token}`
-            //     }).then(res => {
-            //         if (res.data.status !== 0) {
-            //             return layer.msg(res.data.message)
-            //         }
-            //         console.log('获取基本信息成功.')
-            //     })
+        window.location.href = '/index.html'
+
     });
 })
