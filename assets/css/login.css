@@ -38,7 +38,8 @@ body {
     display: block;
     left: 50%;
     height: 55px;
-    width: 168px;
+    width: 64%;
+    /* width: 168px; */
     padding-top: 20px;
     transform: translate(-50%);
     color: rgb(255, 255, 255);

@@ -8,7 +8,6 @@
 
 let rooturl = "http://www.liulongbin.top:3007"
 document.querySelector("#link_reg").addEventListener('click', function() {
-    console.log(1111);
     document.querySelector(".loginAndRegBox").style.height = "330px";
     document.getElementById("reg_box").style.display = "block";
     document.getElementById("login_box").style.display = "none";
@@ -90,9 +89,9 @@ document.getElementById("form_login").addEventListener("submit", function(e) {
         let paramsobj = {
             Authorization: res.data.token
         }
-        window.localStorage.setItem('token', res.data.token)
-            // console.log(res.data.token) //服务端返回的token字符串
-        window.location.href = '/index.html'
+        window.localStorage.setItem('token', res.data.token);
+        // console.log(res.data.token) //服务端返回的token字符串
+        window.location.href = '/index.html';
 
     });
 })

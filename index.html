@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- 导入layui的样式表 -->
-    <link rel="stylesheet" href="assets/lib/layui/css/layui.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 
 <body>
@@ -25,9 +25,9 @@
                         <span class="text-avatar">A</span> 个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a href="/user/user_info.html" target="fm">基本资料</a></dd>
+                        <!-- <dd><a href="/user/user_avatar.html" target="fm">更换头像</a></dd> -->
+                        <dd><a href="/user/user_pwd.html" target="fm">重置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
@@ -53,20 +53,20 @@
                     <li class="layui-nav-item">
                         <a class="" href="javascript:;"><i class="layui-icon layui-icon-file-b"></i>文章管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>发表文章</a></dd>
+                            <dd><a href="/article/art_cate.html" target="fm"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
+                            <dd><a href="/article/art_pub.html" target="fm"><i class="layui-icon layui-icon-app"></i>发表文章</a></dd>
+                            <dd><a href="/article/art_list.html" target="fm"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
                         <a href="javascript:;"><i class="layui-icon layui-icon-friends"></i>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-                            <dd><a href=""><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                            <dd><a href="/user/user_info.html" target="fm"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
+                            <!-- <dd><a href="/user/user_avatar.html" target="fm"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd> -->
+                            <dd><a href="/user/user_pwd.html" target="fm"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
                         </dl>
                     </li>
-                    <li class="layui-nav-item"><a href="javascript:;">click menu item</a></li>
+                    <!-- <li class="layui-nav-item"><a href="javascript:;">click menu item</a></li> -->
                 </ul>
             </div>
         </div>
@@ -79,14 +79,14 @@
 
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            大事件项目
+            披萨上文章管理系统
         </div>
     </div>
 
 
     <!-- 导入layui的js文件 -->
     <script src="/assets/lib/layui/layui.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/node_modules/axios/dist/axios.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 
